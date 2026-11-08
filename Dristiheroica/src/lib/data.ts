@@ -1,6 +1,7 @@
 // Número de WhatsApp del negocio (formato internacional sin "+")
 export const WHATSAPP_NUMBER = "573224091898"
 
+
 export function whatsappLink(message: string) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
 }
@@ -25,39 +26,96 @@ export const services: Service[] = [
     accent: "#E50914",
   },
   {
-    name: "Disney premium (Partidos champions league)",
+    name: "Premium (Champions league)",
     logo: "/logos/disney-plus.svg",
     logoClass: "h-14",
-    price: "$ 17.000",
+    price: "$ 16.000",
     tag: "Popular",
     accent: "#113CCF",
   },
   {
+    name: "Directv Go",
+    logo: "/logos/Dgo.png",
+    logoClass: "h-15",
+    tag:"200 Canales en vivo",
+    price: "$25.000",
+    accent: "#FE8E1A",
+  },
+  {
+    name: "Disney Plus",
+    logo: "/logos/disney-plus.svg",
+    logoClass: "h-14",
+    price: "$13.000",
+    accent: "#113CCF",
+  },
+  {
+    name: "Prime video",
+    logo: "/logos/prime-video.svg",
+    logoClass: "h-10",
+    price: "$ 11.000",
+    tag: "Destacado",
+    accent: "#00A8E1",
+  }, 
+  {
     name: "HBO Max",
     logo: "/logos/hbomax.jpg",
     logoClass: "h-17",
-    price: "$ 11.000",
+    price: "$11.000",
     accent: "#7B2FF7",
-  },
-  {
-    name: "Prime Video",
-    logo: "/logos/prime-video.svg",
-    logoClass: "h-10",
-    price: "$ 12.000",
-    tag: "Destacado",
-    accent: "#00A8E1",
   },
   {
     name: "Paramount+",
     logo: "/logos/paramount.svg",
     logoClass: "h-17",
-    price: "$ 14.000",
+    price: "$13.000",
     accent: "#0064FF",
   },
   {
-    name: "ViX Premium",
+    name: "Youtube premium",
+    logo: "/logos/youtube.png",
+    logoClass: "h-13",
+    price: "$22.000",
+    accent: "#FC1C1C",
+  },
+  {
+    name: "Universal +",
+    logo: "/logos/Universal.png",
+    logoClass: "h-32",
+    price: "$12.000",
+    accent: "#FDFDFD",
+  },
+  {
+    name: "Crunchyroll",
+    logo: "/logos/Crunchyroll.png",
+    logoClass: "h-16",
+    price: "$12.000",
+    accent: "#FF5A00",
+  },
+  {
+    name: "Rakuten Viki",
+    logo: "/logos/Rakuten.png",
+    logoClass: "h-30",
+    price: "$11.500",
+    accent: "#0697F7",
+  },
+  {
+    name: "Spotify",
+    logo: "/logos/Spotify.png",
+    logoClass: "h-25",
+    price: "$13.800",
+    accent: "#1CD360",
+  },
+  {
+    name: "Capcut Pro",
+    logo: "/logos/Capcut.png",
+    logoClass: "h-14",
+    price: "$18.000",
+    accent: "#FDFDFD",
+  },
+  {
+    name: "ViX +",
     logo: "", // sin logo oficial disponible: se renderiza como marca tipográfica
-    price: "$ 13.000",
+    price: "$8.000",
     accent: "#FF5A00",
   },
   {
@@ -89,21 +147,14 @@ export const services: Service[] = [
     price: "$20.000",
     accent: "#534bbd",
   },
-  {
-    name: "Youtube premium",
-    logo: "/logos/youtube.png",
-    logoClass: "h-16",
-    price: "$17.000",
-    accent: "#ebebeb",
-  },
-  {
-    name: "ChatGPT Plus",
-    logo: "/logos/chatgpt.svg",
-    logoClass: "h-16",
-    price: "$ 95.000",
-    tag: "GPT-4",
-    accent: "#10A37F",
-  },
+  // {
+  //   name: "ChatGPT Plus",
+  //   logo: "/logos/chatgpt.svg",
+  //   logoClass: "h-16",
+  //   price: "$ 45.000",
+  //   tag: "GPT-5",
+  //   accent: "#10A37F",
+  // },
 ]
 
 export type Slide = {

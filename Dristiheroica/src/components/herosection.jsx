@@ -47,7 +47,7 @@ export function HeroSection() {
 
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
-            href={whatsappLink("Hola DistriHeroica, quiero comprar una cuenta de streaming.")}
+            href={whatsappLink("Hola, quiero comprar una cuenta de streaming.")}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-whatsapp px-6 py-3 text-sm font-semibold text-whatsapp-foreground shadow-lg shadow-whatsapp/20 transition-transform hover:-translate-y-0.5 hover:bg-whatsapp/90 sm:w-auto"
@@ -60,6 +60,12 @@ export function HeroSection() {
             className="inline-flex w-full items-center justify-center rounded-xl border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-secondary sm:w-auto"
           >
             Ver catálogo
+          </a>
+          <a
+            href="#opiniones"
+            className="inline-flex w-full items-center justify-center rounded-xl border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-secondary sm:w-auto"
+          >
+            Ver opiniones
           </a>
         </div>
 
